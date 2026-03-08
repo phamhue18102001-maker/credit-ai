@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit AI</title>
+</head>
+<body>
+  <h1>Credit AI Demo</h1>
+
+  <form id="form">
+    <input type="number" placeholder="Income" id="income"/>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+  document.getElementById("form").onsubmit = async (e)=>{
+    e.preventDefault()
+
+    const income = document.getElementById("income").value
+
+    await fetch("https://credit-ai-6.onrender.com/predict",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({income:income})
+    })
+  }
+  </script>
+</body>
+</html>
