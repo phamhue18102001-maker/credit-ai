@@ -32,16 +32,22 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Load Model
-MODEL_DIR = "credit_model"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, "credit_model")
+
 try:
     xgb_model = joblib.load(os.path.join(MODEL_DIR, "xgb_model.pkl"))
     scaler = joblib.load(os.path.join(MODEL_DIR, "scaler.pkl"))
+
     with open(os.path.join(MODEL_DIR, "feature_names.json")) as f:
         feature_names = json.load(f)
+
     with open(os.path.join(MODEL_DIR, "metadata.json")) as f:
         model_metadata = json.load(f)
+
     MODEL_LOADED = True
+    print("Model loaded successfully")
+
 except Exception as e:
     print(f"Error loading model: {e}")
     MODEL_LOADED = False
