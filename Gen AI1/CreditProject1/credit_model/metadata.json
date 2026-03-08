@@ -1,0 +1,19 @@
+{
+  "model_type": "XGBClassifier",
+  "train_accuracy": 1.0,
+  "test_accuracy": 1.0,
+  "roc_auc": 1.0,
+  "n_features": 10,
+  "feature_names": [
+    "income",
+    "age",
+    "employment_years",
+    "loan_amount",
+    "loan_term",
+    "credit_history_length",
+    "num_credit_lines",
+    "num_delinquencies",
+    "debt_to_income_ratio",
+    "savings_balance"
+  ]
+}
