@@ -16,7 +16,9 @@ app = FastAPI(
     description="API for predicting credit score and loan approval",
     version="1.0.0"
 )
-
+@app.get("/")
+def home():
+    return {"message": "Credit AI API is running"}
 # CORS Configuration
 origins = [
     "http://localhost:3000",

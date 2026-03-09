@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div style={{padding:40}}>
 
-      <h1>Credit AI Prediction</h1>
+      <h1>Credit Score Prediction</h1>
 
       <input
         placeholder="Age"
