@@ -1,0 +1,176 @@
+[00:00:07.684] Server  LOG     ✓ Ready in 5.9s
+[00:00:28.537] Server  LOG     ○ Compiling / ...
+[00:00:31.001] Server  ERROR   ⨯ ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from 'react';
+    |          ^^^^^^^^
+  2 | import { useForm } from 'react-hook-form';
+  3 | import axios from 'axios';
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/page.tsx:3:1
+Module not found: Can't resolve 'axios'
+  1 | import { useState } from 'react';
+  2 | import { useForm } from 'react-hook-form';
+> 3 | import axios from 'axios';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | interface FormData {
+  6 |   income: number;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/page.tsx:2:1
+Module not found: Can't resolve 'react-hook-form'
+  1 | import { useState } from 'react';
+> 2 | import { useForm } from 'react-hook-form';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import axios from 'axios';
+  4 |
+  5 | interface FormData {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:34.077] Server  LOG     ○ Compiling /_error ...
+[00:00:39.525] Server  ERROR   ⨯ ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from 'react';
+    |          ^^^^^^^^
+  2 | import { useForm } from 'react-hook-form';
+  3 | import axios from 'axios';
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/page.tsx:3:1
+Module not found: Can't resolve 'axios'
+  1 | import { useState } from 'react';
+  2 | import { useForm } from 'react-hook-form';
+> 3 | import axios from 'axios';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | interface FormData {
+  6 |   income: number;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./app/page.tsx:2:1
+Module not found: Can't resolve 'react-hook-form'
+  1 | import { useState } from 'react';
+> 2 | import { useForm } from 'react-hook-form';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import axios from 'axios';
+  4 |
+  5 | interface FormData {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:41.350] Browser ERROR   uncaughtError: Error: ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from 'react';
+    |          ^^^^^^^^
+  2 | import { useForm } from 'react-hook-form';
+  3 | import axios from 'axios';
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:00:42.265] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from 'react';
+    |          ^^^^^^^^
+  2 | import { useForm } from 'react-hook-form';
+  3 | import axios from 'axios';
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:42.266] Browser ERROR   ./app/page.tsx:3:1
+Module not found: Can't resolve 'axios'
+  1 | import { useState } from 'react';
+  2 | import { useForm } from 'react-hook-form';
+> 3 | import axios from 'axios';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | interface FormData {
+  6 |   income: number;
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:42.266] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve 'react-hook-form'
+  1 | import { useState } from 'react';
+> 2 | import { useForm } from 'react-hook-form';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import axios from 'axios';
+  4 |
+  5 | interface FormData {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:43.265] Browser ERROR   ./app/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from 'react';
+    |          ^^^^^^^^
+  2 | import { useForm } from 'react-hook-form';
+  3 | import axios from 'axios';
+  4 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:43.266] Browser ERROR   ./app/page.tsx:3:1
+Module not found: Can't resolve 'axios'
+  1 | import { useState } from 'react';
+  2 | import { useForm } from 'react-hook-form';
+> 3 | import axios from 'axios';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | interface FormData {
+  6 |   income: number;
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:43.266] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve 'react-hook-form'
+  1 | import { useState } from 'react';
+> 2 | import { useForm } from 'react-hook-form';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import axios from 'axios';
+  4 |
+  5 | interface FormData {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.756] Server  LOG     ✓ Compiled in 498ms
+[00:04:26.139] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
